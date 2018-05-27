@@ -19,9 +19,9 @@
 				</div>
     			<div id="navR_txt">
                 	<ul>
-                    	<li><a href="index.php" class="selected">首页</a></li>
-                    	<li><a href="login.php">登录</a></li>
-                    	<li><a href="register.php">注册</a></li>
+                    	<li><a href="loginsuccess.php" class="selected">首页</a></li>
+                    	<li><a href="login.php">我的博客</a></li>
+                    	<li><a href="logout.php">退出</a></li>
                 	</ul>
     			</div>
 			</div>

@@ -66,3 +66,15 @@
 内容：
 （1）完成系统设计报告。
 （2）注册页面响应代码编写(registeraction.php)。
+
+周次：12
+日期：5.27
+类型：每周小结
+内容：
+（1）完成主页面的代码编写(index.php)。
+（2）完成登录页面的代码编写(login.php)。
+（3）完成登录页面响应的代码编写(loginaction.php)。
+（4）完成登录成功页面的代码编写(loginsuccess.php)。
+（5）完成退出账号的代码编写(logout.php)。
+（6）完成主页面的样式编写(index.css)。
+（7）完成注册登录页面的样式编写(register_login.css)。
