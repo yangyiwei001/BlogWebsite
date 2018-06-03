@@ -25,9 +25,9 @@
 					</tr>
 					<tr>
 						<td colspan="2" align="center" style="color:red;font-size:10px;">
-    						<?php 
+    						<?php
                                 $err=isset($_GET["err"])?$_GET["err"]:"";
-    							switch($err){
+                                switch($err){
                                     case 1:
                                         echo "用户名或密码错误！";
                                         break;

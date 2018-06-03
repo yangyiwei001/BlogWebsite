@@ -34,7 +34,7 @@
                     else{
                         $w=1;
                     }
-        			include("paging.php");//引入分页功能
+                    include("paging.php");//引入分页功能
                     $sql="select * from article where $w order by articleid desc limit $offset,$pagesize";
                     $query=mysqli_query($conn,$sql);   
                     while($rs=mysqli_fetch_array($query)){
@@ -59,7 +59,7 @@
                     if($rows!=0){
                 ?> 
                 <div id="paging">
-    				当前:<?php echo $page;?>/<?php echo $pagecount;?>&nbsp;<a href="?page=<?php echo 1;?>">首页</a>&nbsp;<a href="?page=<?php echo $pageprev;?>">上一页</a>&nbsp;<a href="?page=<?php echo $pagenext;?>">下一页</a>&nbsp;<a href="?page=<?php echo $pagecount;?>">末页</a>
+					当前:<?php echo $page;?>/<?php echo $pagecount;?>&nbsp;<a href="?page=<?php echo 1;?>">首页</a>&nbsp;<a href="?page=<?php echo $pageprev;?>">上一页</a>&nbsp;<a href="?page=<?php echo $pagenext;?>">下一页</a>&nbsp;<a href="?page=<?php echo $pagecount;?>">末页</a>
                 </div>
 				<?php 
                     }
@@ -93,8 +93,8 @@
 					<div>
 						<h3><a href="view.php?id=<?php echo $row['articleid'];?>"><?php echo $row['title'];?></a></h3>
 					</div>
-					<?php   
-                        }
+					<?php
+					   }
 					?>
 				</div>
 			</div>

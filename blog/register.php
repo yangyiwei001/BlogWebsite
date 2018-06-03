@@ -28,12 +28,12 @@
 					</tr>
 					<tr>
 						<td colspan="2" align="center" style="color:red;font-size:10px;">
-    						<?php 
+							<?php
                                 $err=isset($_GET["err"])?$_GET["err"]:"";
-    							switch($err){
+                                switch($err){
                                     case 1:
                                         echo "用户名为4-16个字符，包括字母、数字、下划线";
-    							        break;
+                                        break;
     							    case 2:
     							        echo "密码为6-16个字符，包括字母、数字、下划线";
     							        break;
@@ -53,7 +53,7 @@
     							        echo "注册成功！";
     							        break;
                                 }
-    						?>
+                            ?>
 						</td>
 					</tr>
 					<tr>
