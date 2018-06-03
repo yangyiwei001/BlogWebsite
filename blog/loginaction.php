@@ -5,9 +5,10 @@
     
     if(!empty($username)&&!empty($password)){
         $conn=mysqli_connect("localhost","root","","blogwebsite");
+        mysqli_query($conn,"set names 'utf8'");
         $sql_select="select username,password from user where username='$username' and password='$password'";
-        $result=mysqli_query($conn,$sql_select);
-        $row=mysqli_fetch_array($result);
+        $query=mysqli_query($conn,$sql_select);
+        $row=mysqli_fetch_array($query);
         if($username==$row['username']&&$password==$row['password']){
             if($remember=="on"){
                 setcookie("userName",$username,time()+7*24*3600);

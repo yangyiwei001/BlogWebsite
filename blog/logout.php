@@ -4,6 +4,6 @@
     //撤销session
     session_unset();
     session_destroy();
-    //跳转到login.php
-    header("Location:login.php");
+    //跳转到index.php
+    header("Location:index.php");
 ?>

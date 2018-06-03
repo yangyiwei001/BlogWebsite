@@ -79,3 +79,17 @@
 （5）完成退出账号的代码编写(logout.php)。
 （6）完成主页面的样式编写(index.css)。
 （7）完成注册登录页面的样式编写(register_login.css)。
+
+周次：13
+日期：6.3
+类型：每周小结
+内容：
+（1）更新index.php、loginsuccess.php，添加分类栏、热门栏以及分页功能。
+（2）完成分页功能(paging.php)。
+（3）添加sort1.php、sort2.php。
+（4）完成我的博客页面的代码编写(myblog.php)。
+（5）完成浏览博文功能(view.php)。
+（6）完成写博文功能(write.php)。
+（7）完成编辑博文功能(edit.php)。
+（8）完成删除博文功能(delete.php)。
+（9）将所有样式合并为main.css。
