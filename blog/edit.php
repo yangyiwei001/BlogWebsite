@@ -69,9 +69,10 @@
         		<input class="button" type="submit" name="sub" value="提交">
     		</form>
     	</div>
-    	<?php 
-            }else{
-		?>
+    	<?php
+    		}
+    		else{
+        ?>
 			<h1>你无权访问！！！</h1>
 		<?php 
             }

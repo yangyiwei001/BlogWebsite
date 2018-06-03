@@ -34,24 +34,24 @@
                                     case 1:
                                         echo "用户名为4-16个字符，包括字母、数字、下划线";
                                         break;
-    							    case 2:
-    							        echo "密码为6-16个字符，包括字母、数字、下划线";
-    							        break;
-    							    case 3:
-    							        echo "邮箱格式错误！";
-    							        break;
-    							    case 4:
-    							        echo "用户名已存在！";
-    							        break;
-    							    case 5:
-    							        echo "两次密码不一致！";
-    							        break;
-    							    case 6:
-    							        echo "邮箱号已存在！";
-							            break;
-    							    case 7:
-    							        echo "注册成功！";
-    							        break;
+                                    case 2:
+                                        echo "密码为6-16个字符，包括字母、数字、下划线";
+                                        break;
+                                    case 3:
+                                        echo "邮箱格式错误！";
+                                        break;
+                                    case 4:
+                                        echo "用户名已存在！";
+                                        break;
+                                    case 5:
+                                        echo "两次密码不一致！";
+                                        break;
+                                    case 6:
+                                        echo "邮箱号已存在！";
+                                        break;
+                                    case 7:
+                                        echo "注册成功！";
+                                        break;
                                 }
                             ?>
 						</td>
