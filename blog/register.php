@@ -33,7 +33,7 @@
                                 $err=isset($_GET["err"])?$_GET["err"]:"";
                                 switch($err){
                                     case 1:
-                                        echo "用户名为4-16个字符，包括字母、数字、下划线";
+                                        echo "账号为4-16个字符，包括字母、数字、下划线";
                                         break;
                                     case 2:
                                         echo "密码为6-16个字符，包括字母、数字、下划线";
@@ -42,7 +42,7 @@
                                         echo "邮箱格式错误！";
                                         break;
                                     case 4:
-                                        echo "用户名已存在！";
+                                        echo "账号已存在！";
                                         break;
                                     case 5:
                                         echo "两次密码不一致！";
