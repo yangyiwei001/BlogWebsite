@@ -43,7 +43,7 @@
                 $hid=$_POST['hid'];
                 $sql_update="update article set title='$title',content='$con',sort='$sort' where articleid='$hid'";
                 mysqli_query($conn,$sql_update);
-                echo "<script>alert('update success!');location.href='myblog.php'</script>";
+                echo "<script>alert('update success!');location.href='myblog.php'</script>";//提示更新成功，并转到myblog.php
             }
         ?>
         <div align="center">
@@ -63,7 +63,7 @@
         		<br><br>
         		<textarea id="con" name="con"><?php echo $rs['content'];?></textarea>
 				<script type="text/javascript">
-        			UE.getEditor("con",{initialFrameWidth:900,initialFrameHeight:550});
+        			UE.getEditor("con",{initialFrameWidth:900,initialFrameHeight:550});//引入编辑器ueditor
     			</script>
     			<br>
         		<input class="button" type="submit" name="sub" value="提交">

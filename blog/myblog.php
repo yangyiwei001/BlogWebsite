@@ -6,7 +6,8 @@
 		<title>myblog</title>
 	</head>
 	<body>
-		<?php 
+		<?php
+            //判断是否已登录
             session_start();
             $username=isset($_SESSION['user'])?$_SESSION['user']:"";
             if(!empty($username)){

@@ -21,6 +21,7 @@
 			</div>
 		</div>
 		<div id="content">
+			<!-- 文章栏  -->
 			<div id="contentL">
 				<div class="title">
 					<h2>文章</h2>
@@ -66,6 +67,7 @@
 				?>
 			</div>
 			<div id="contentR">
+				<!-- 分类栏  -->
 				<div id="sort">
 					<div class="title">
 						<h2>分类</h2>
@@ -81,6 +83,7 @@
         				</ul>
 					</form>
 				</div>
+				<!-- 热门栏  -->
 				<div id="hotblog">
 					<div class="title">
 						<h2>热门</h2>

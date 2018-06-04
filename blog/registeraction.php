@@ -16,7 +16,7 @@
     else{
         if($password==$re_password){
             $conn=mysqli_connect("localhost","root","","blogwebsite");//连接数据库
-            mysqli_query($conn,"set names 'utf8'");
+            mysqli_query($conn,"set names 'utf8'");//设定字符集
             $sql_select="select username,email from user";//SQL语句
             $query=mysqli_query($conn,$sql_select);//执行SQL语句
             $row=mysqli_fetch_array($query);//将数据以索引方式存储在数组中

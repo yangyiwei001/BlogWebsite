@@ -6,6 +6,6 @@
         $del=$_GET['id'];
         $sql_delete="delete from article where articleid='$del'";       
         mysqli_query($conn,$sql_delete);       
-        echo "<script>alert('delete success!');location.href='myblog.php'</script>";
+        echo "<script>alert('delete success!');location.href='myblog.php'</script>";//提示删除成功，并转到myblog.php
     }
 ?>

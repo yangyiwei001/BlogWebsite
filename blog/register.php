@@ -29,6 +29,7 @@
 					<tr>
 						<td colspan="2" align="center" style="color:red;font-size:10px;">
 							<?php
+                                //错误提示信息
                                 $err=isset($_GET["err"])?$_GET["err"]:"";
                                 switch($err){
                                     case 1:

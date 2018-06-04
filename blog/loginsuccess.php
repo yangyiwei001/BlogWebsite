@@ -7,6 +7,7 @@
 	</head>
 	<body>
 		<?php
+            //判断是否已登录
             session_start();
             $username=isset($_SESSION['user'])?$_SESSION['user']:"";
             if(!empty($username)){
@@ -27,6 +28,7 @@
 		</div>
 		<div id="content">
 			<div id="contentL">
+				<!-- 文章栏  -->
 				<div class="title">
 					<h2>文章</h2>
 				</div>
@@ -38,7 +40,7 @@
     				else{
     				    $w=1;
     				}
-    				include("paging.php");
+    				include("paging.php");//引入分页功能
     				$sql="select * from article where $w order by articleid desc limit $offset,$pagesize";
     				$query=mysqli_query($conn,$sql);
     				while($rs=mysqli_fetch_array($query)){
@@ -70,6 +72,7 @@
                 ?>
 			</div>
 			<div id="contentR">
+				<!-- 分类栏  -->
 				<div id="sort">
 					<div class="title">
 						<h2>分类</h2>
@@ -85,6 +88,7 @@
         				</ul>
         			</form>
         		</div>
+        		<!-- 热门栏  -->
 				<div id="hotblog">
 					<div class="title">
 						<h2>热门</h2>

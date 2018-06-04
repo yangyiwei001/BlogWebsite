@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<?php
+            //判断是否已登录
             session_start();
             $username=isset($_SESSION['user'])?$_SESSION['user']:"";
             if(!empty($username)){
@@ -31,12 +32,12 @@
             $conn=mysqli_connect("localhost","root","","blogwebsite");
             mysqli_query($conn,"set names 'utf8'");
             if(!empty($_POST['sub'])){
-                $title=$_POST['title'];  //获取title表单内容
-                $con=$_POST['con'];      //获取content表单内容
+                $title=$_POST['title'];//获取title表单内容
+                $con=$_POST['con'];//获取content表单内容
                 $sort=$_POST['sort'];
                 $sql_insert="insert into article values(null,'$title','$con',now(),'0','0','$sort','$username')";
                 mysqli_query($conn,$sql_insert);
-                echo "<script>alert('insert success!');location.href='myblog.php'</script>";
+                echo "<script>alert('insert success!');location.href='myblog.php'</script>";//提示添加成功，并转到myblog.php
             }
         ?>
         <div align="center">
