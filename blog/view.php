@@ -28,7 +28,7 @@
     			</div>
     			<div id="navR">
     				<ul>
-    					<li><a href="index.php" class="selected">首页</a></li>
+    					<li><a href="index.php">首页</a></li>
     					<li><a href="login.php">登录</a></li>
     					<li><a href="register.php">注册</a></li>
     				</ul>
@@ -49,6 +49,26 @@
     			<li>浏览：<?php echo $rs['viewnum']?></li>
     		</ul>
     		<p><?php echo $rs['content'];?></p>
+    	</div>
+    	<div id="commentlogin">
+    		<p><a href="login.php">登录</a>后才能进行评论</p>
+    	</div>
+    	<?php
+            $sql_s="select * from comment where articleid='$id'";
+            $result=mysqli_query($conn,$sql_s);
+            while($row=mysqli_fetch_array($result)){
+        ?>
+        <div id="comm">
+        	<ul>
+        		<li><?php echo $row['username'];?></li>
+        		<li><?php echo $row['commentdate']?></li>
+        	</ul>
+        	<p><?php echo $row['comment'];?></p>
+        </div>
+        <?php 
+            }
+        ?>
+    	<div>
     	</div>
     </body>
 </html>

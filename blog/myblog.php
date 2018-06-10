@@ -23,7 +23,7 @@
         		</div>
         		<div id="navR">
         			<ul>
-        				<li><a href="loginsuccess.php" class="selected">首页</a></li>
+        				<li><a href="loginsuccess.php">首页</a></li>
         				<li><a href="write.php">写博文</a></li>
         				<li><a href="logout.php">退出</a></li>
         			</ul>
@@ -38,15 +38,15 @@
             	<div id="myarticleup">
             		<h2><a href="loginsuccessview.php?id=<?php echo $rs['articleid'];?>"><?php echo $rs['title'];?></a></h2>
             		<ul>
-            			<li>作者：<?php echo $rs['username']?></li>
+            			<li>作者：<?php echo $rs['username'];?></li>
             			<li>|</li>
-            			<li>日期：<?php echo $rs['articledate']?></li>
+            			<li>日期：<?php echo $rs['articledate'];?></li>
             			<li>|</li>
-            			<li>分类：<?php echo $rs['sort']?></li>
+            			<li>分类：<?php echo $rs['sort'];?></li>
             			<li>|</li>
-            			<li>评论：<?php echo $rs['commentnum']?></li>
+            			<li>评论：<?php echo $rs['commentnum'];?></li>
             			<li>|</li>
-            			<li>浏览：<?php echo $rs['viewnum']?></li>
+            			<li>浏览：<?php echo $rs['viewnum'];?></li>
             		</ul>
             		<p><?php echo mb_substr($rs['content'],0,110,'utf-8');?>...</p>
             	</div>
